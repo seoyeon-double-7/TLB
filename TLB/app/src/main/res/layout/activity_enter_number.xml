@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".EnterNumberActivity">
+
+    <TextView
+        android:id="@+id/hello_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:fontFamily="@font/iphone"
+        android:text="Hello!"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/a_one_time"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/a_one_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lateef"
+        android:text="A one-time code has been sent"
+        android:textColor="@color/kulrang"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/code_tx"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello_tv" />
+
+
+
+   <EditText
+       android:id="@+id/code_tx"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/bg_rounded_input_field"
+       android:padding="15dp"
+       android:drawableStart="@drawable/ic_password"
+       android:drawablePadding="10dp"
+       android:hint="Code"
+       android:textColorHint="#998869FF"
+       android:fontFamily="@font/iphone"
+       android:maxLength="6"
+       android:inputType="number"
+       android:layout_marginRight="20dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="30dp"
+       android:visibility="invisible"
+       app:layout_constraintBottom_toTopOf="@+id/send_again"
+       app:layout_constraintTop_toBottomOf="@+id/a_one_time"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/send_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_update"
+        android:drawablePadding="10dp"
+        android:text="Send again"
+        android:textColor="@color/siyoh"
+        android:textSize="15sp"
+        android:fontFamily="@font/iphone"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/code_tx"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+<!--    buyogi 1-page-->
+
+
+    <TextView
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Next"
+        android:textColor="@color/siyoh"
+        android:textSize="16sp"
+        android:fontFamily="@font/bold"
+        android:layout_margin="20dp"/>
+
+
+    <TextView
+        android:id="@+id/welcome_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:fontFamily="@font/iphone"
+        android:text="Welcome!"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/we_are_glad"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/we_are_glad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lateef"
+        android:text="We are glad to see you"
+        android:textColor="@color/kulrang"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/number_tx"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_tv" />
+
+
+    <EditText
+        android:id="@+id/number_tx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_input_field"
+        android:padding="15dp"
+        android:drawableStart="@drawable/ic_telephone"
+        android:drawablePadding="10dp"
+        android:hint="Number"
+        android:textColorHint="#998869FF"
+        android:fontFamily="@font/iphone"
+        android:maxLength="25"
+        android:inputType="phone"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/we_are_glad"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

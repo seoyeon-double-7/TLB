@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "413701673046",
+    "firebase_url": "https://e-icon-default-rtdb.firebaseio.com",
+    "project_id": "e-icon",
+    "storage_bucket": "e-icon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413701673046:android:3f0da429e5fca308d0abf7",
+        "android_client_info": {
+          "package_name": "com.example.tlb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413701673046-al8l4el6c4si4h1g1rcplnhhr7skg609.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7C305ElIpp0_ova81Hei7nP5Z2l2Wb5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413701673046-al8l4el6c4si4h1g1rcplnhhr7skg609.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

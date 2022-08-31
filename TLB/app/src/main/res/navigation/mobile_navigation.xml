@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.tlb.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_homeItemClickFragment"
+            app:destination="@id/homeItemClickFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.example.tlb.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/bellFragment"
+        android:name="com.example.tlb.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.tlb.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_userFragment_to_editUsername"
+            app:destination="@id/editUsername" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeItemClickFragment"
+        android:name="com.example.tlb.HomeItemClickFragment"
+        android:label="fragment_home_item_click"
+        tools:layout="@layout/fragment_home_item_click" />
+    <fragment
+        android:id="@+id/editUsername"
+        android:name="com.example.tlb.EditUsername"
+        android:label="fragment_edit_username"
+        tools:layout="@layout/fragment_edit_username" />
+</navigation>
